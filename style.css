@@ -611,6 +611,10 @@ body {
     position: relative;
 }
 
+.project-main + .project-main {
+    margin-top: 4rem;
+}
+
 .project-badge {
     display: inline-block;
     background: var(--gradient-main);
