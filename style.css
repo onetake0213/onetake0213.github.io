@@ -290,6 +290,77 @@ body {
     transform: translateY(-3px);
 }
 
+/* New Hero Styles */
+.hero-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #059669;
+    background: #d1fae5;
+    padding: 0.4rem 0.8rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #059669;
+    border-radius: 50%;
+}
+
+.hero-name {
+    font-size: clamp(3.5rem, 6vw, 4.8rem);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.05em;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-cta-new {
+    align-items: center;
+}
+
+.btn-sq {
+    border-radius: 8px !important;
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    color: var(--black);
+    border-color: var(--gray-200);
+}
+
+.btn-github:hover {
+    color: var(--black);
+    border-color: var(--black);
+    background: var(--gray-50);
+}
+
+.btn-text {
+    color: var(--gray-600);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.85rem 1rem;
+    transition: var(--transition);
+}
+
+.btn-text:hover {
+    color: var(--purple);
+}
+
 /* Hero Visual */
 .hero-visual {
     display: flex;
@@ -854,8 +925,8 @@ body {
 
 .skills-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
 }
 
 .skills-group-title {
@@ -898,6 +969,9 @@ body {
     font-weight: 700;
     color: var(--black);
     letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .skill-level {
