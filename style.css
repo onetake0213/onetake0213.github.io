@@ -318,12 +318,21 @@ body {
     letter-spacing: -0.05em;
 }
 
-.hero-subtitle {
+.hero-title-main {
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
     font-weight: 700;
-    color: var(--purple);
+    line-height: 1.4;
     margin-bottom: 1.5rem;
     letter-spacing: -0.03em;
+    color: var(--black);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #7c3aed 0%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
 }
 
 .hero-cta-new {
